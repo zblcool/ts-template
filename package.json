@@ -1,0 +1,24 @@
+{
+  "name": "website-template",
+  "version": "1.0.0",
+  "description": "# UI",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mountain-pass/website-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mountain-pass/website-template/issues"
+  },
+  "homepage": "https://github.com/mountain-pass/website-template#readme",
+  "scripts": {
+    "prepare": "husky install",
+    "husky:add_precommit": "npx husky add .husky/pre-commit \"npm test\"",
+    "precommit": "cd ui && npm run lint:fix"
+  },
+  "dependencies": {
+    "husky": "7.0.4"
+  }
+}

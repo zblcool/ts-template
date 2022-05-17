@@ -1,0 +1,62 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ui",
+  "author": "Nick Grealy",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop --host=0.0.0.0",
+    "build": "echo \"$(cat gatsby-browser.tsx)$(cat gatsby-server-suffix.tsx)\" > gatsby-ssr.tsx && gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src",
+    "prettier": "prettier --write 'src/**/*.{js,jsx,json}'",
+    "pretty-quick": "pretty-quick"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "babel-plugin-styled-components": "2.0.6",
+    "bootstrap": "5.1.3",
+    "gatsby": "4.11.1",
+    "gatsby-plugin-react-helmet": "5.11.0",
+    "gatsby-plugin-sass": "5.11.1",
+    "gatsby-plugin-styled-components": "5.11.0",
+    "react": "18.0.0",
+    "react-bootstrap": "2.2.2",
+    "react-dom": "18.0.0",
+    "react-helmet": "6.1.0",
+    "react-icons": "4.3.1",
+    "react-query": "3.34.19",
+    "sass": "1.49.10",
+    "styled-components": "5.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.14",
+    "@types/styled-components": "5.1.24",
+    "@typescript-eslint/eslint-plugin": "5.17.0",
+    "@typescript-eslint/parser": "5.17.0",
+    "assert": "2.0.0",
+    "buffer": "6.0.3",
+    "crypto-browserify": "3.12.0",
+    "eslint": "8.12.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "https-browserify": "1.0.0",
+    "os-browserify": "0.3.0",
+    "stream-browserify": "3.0.0",
+    "stream-http": "3.2.0",
+    "typescript": "4.6.3",
+    "url": "0.11.0"
+  }
+}
